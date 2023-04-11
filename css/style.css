@@ -1,0 +1,132 @@
+body {
+    background-color: #c8b6ff;
+    /*00afb9*/
+    /*margin:0 20px;*/
+    
+}
+.parent{
+    position:relative;
+    /*margin:0 20px;*/
+}
+.div {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    animation-duration:5s;
+    animation-fill-mode:both;
+    animation-timing-function:ease-in;
+    
+
+}
+.div1 {
+    background-image: url(../images/photo1.jpg);
+    left: 0;
+    animation-delay: 0s;
+    animation-name:change_right;
+    /*position:relative;*/
+}
+.div2 {
+    background-image: url(../images/photo2.jpg);
+    margin-top: 310px;
+    right: 0;
+    animation-delay: 5s;
+    animation-name: change_left;
+    
+}
+.div3 {
+    background-image: url(../images/photo3.jpg);
+    margin-top: 620px;
+    left: 0;
+    animation-delay: 10s;
+    animation-name: change_right;
+}
+.div4 {
+    background-image: url(../images/photo4.jpg);
+    margin-top: 930px;
+    right: 0;
+    animation-delay: 15s;
+    animation-name: change_left;
+    
+}
+.div5 {
+    background-image: url(../images/photo5.jpg);
+    margin-top: 1240px;
+    animation-delay: 20s;
+    left: 0;
+    animation-name: change_right;
+}
+.div6 {
+    background-image: url(../images/photo6.jpg);
+    margin-top: 1550px;
+    right: 0;
+    animation-delay: 25s;
+    animation-name: change_left;
+}
+.div7 {
+    background-image: url(../images/photo7.jpg);
+    margin-top: 1860px;
+    left: 0;
+    animation-delay: 30s;
+    animation-name: change_right;
+}
+.div8 {
+    background-image: url(../images/photo8.jpg);
+    margin-top: 2170px;
+    right: 0;
+    animation-delay: 35s;
+    animation-name: change_left;
+}
+@keyframes change_right{
+    0% {
+        left: 0;
+        opacity:1;
+        
+    }
+    60% {
+        border-radius: 0%;
+
+    }
+    100% {
+        left: 1500px;
+        opacity:0.1;
+    }
+}
+
+@keyframes change_left {
+    0% {
+        /*right: 0;*/
+        opacity: 0.1;
+    }
+    60% {
+        border-radius:0%;
+        
+    }
+    100% {
+        right: 1500px;
+        opacity: 1;
+    }
+}
+.div:hover{
+    animation-play-state:paused;
+
+}
+/*.overlay .div1:after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background-color:aqua;
+    opacity:0;
+    
+}
+.overlay .div1:hover::after{
+    width:100%;
+    opacity:0.5;
+}*/
